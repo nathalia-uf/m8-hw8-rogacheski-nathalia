@@ -39,6 +39,16 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  transition: transform .4s;
+}
+
+header:hover {
+  background-color: navy;
+}
+
+.nav:hover {
+  font-size: 2.5rem;
+  transform: translateY(2px);
 }
 /* end header link animations */
 

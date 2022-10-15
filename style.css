@@ -36,19 +36,18 @@ header {
 }
 
 /* header link animations! */
-header a {
+header a{
   font-size: 1.5rem;
   color: var(--off-white);
-  transition: transform .4s;
+  opacity: 50%;
+  transition: transform .6s, opacity 1s;
 }
 
-header:hover {
-  background-color: navy;
-}
-
-.nav:hover {
-  font-size: 2.5rem;
-  transform: translateY(2px);
+header a:hover {
+  background-color: #81d3d7;
+  font-size: 2rem;
+  opacity: 100%;
+  transform: translatey(4px);
 }
 /* end header link animations */
 

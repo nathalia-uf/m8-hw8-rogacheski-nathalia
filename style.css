@@ -39,21 +39,23 @@ header {
 header a{
   font-size: 1.5rem;
   color: var(--off-white);
-  opacity: 50%;
-  transition: transform .6s, opacity 1s;
 }
 
 header a:hover {
-  background-color: #81d3d7;
-  font-size: 2rem;
-  opacity: 100%;
-  transform: translatey(4px);
+ 
 }
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  opacity: 50%;
+  transition: opacity 1s, font-size .5s;
+}
+
+main a:hover {
+  font-size: 2rem;
+  opacity: 100%;
 }
 /* end article link transitions */
 

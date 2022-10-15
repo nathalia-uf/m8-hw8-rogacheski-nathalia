@@ -40,7 +40,7 @@ header a{
   font-size: 1.5rem;
   color: var(--off-white);
   transition: font-size .5s linear;
-  animation: wiggle 5s infinite linear;
+  animation: wiggle 8s infinite linear;
 }
 
 header a:hover{
@@ -52,21 +52,27 @@ header a:hover{
     transform: rotateZ(0);
   }
   15% {
-    transform: rotateZ(-15deg);
+    transform: rotateZ(-21deg);
   }
   20% {
-    transform: rotateZ(10deg);
+    transform: rotateZ(18deg);
   }
   25% {
-    transform: rotateZ(-10deg);
+    transform: rotateZ(-15deg);
   }
   30% {
-    transform: rotateZ(6deg);
+    transform: rotateZ(12deg);
   }
   35% {
-    transform: rotateZ(-4deg);
+    transform: rotateZ(-9deg);
   }
-  40%, 100% {
+  40% {
+    transform: rotateZ(6deg);
+  }
+  45% {
+    transform: rotateZ(-3deg);
+  }
+  50%, 100% {
     transform: rotateZ(0);
   }
 }
@@ -137,6 +143,13 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  animation: hover 3s infinite alternate linear ;
+}
+
+@keyframes hover {
+  to {
+    transform: translateY(-8px);
+  }
 }
 
 main article {

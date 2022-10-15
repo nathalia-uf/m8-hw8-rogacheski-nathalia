@@ -39,10 +39,36 @@ header {
 header a{
   font-size: 1.5rem;
   color: var(--off-white);
+  transition: font-size .5s linear;
+  animation: wiggle 5s infinite linear;
 }
 
-header a:hover {
- 
+header a:hover{
+  font-size: 2rem;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
 }
 /* end header link animations */
 
